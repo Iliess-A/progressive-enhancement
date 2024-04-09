@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+   
 body{
     width: 90%;
     margin:auto;
     background:linear-gradient(360deg, #ff0000, #0000ff, #f43e01);
     background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
     background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
 }
+
+body header{
+
+    background-color: yellow;
+
+}
+
+ul :nth-child(1){
+    background-image: url(../asset/bien.png);
+    background-repeat: no-repeat;
+    padding-right: 90%;
+}
+ul :nth-child(2){
+    background-image: url(../asset/mal.png);
+    background-repeat: no-repeat;
+    padding-right: 90%;
+}
+ul :nth-child(3){
+    background-image: url(../asset/chat.png);
+    background-repeat: no-repeat;
+    padding-right: 90%;
+}
+
 q{
     width: 50%;
     font-size: 160%;
@@ -14,13 +41,70 @@ q{
     margin: 80px auto 80px auto;
     /*margin (haut,droite,bas,gauche)*/
 }
+
+.good{
+
+    font-style: italic;
+    text-transform: capitalize;
+    color: green;
+
+}
+
+.bad{
+
+    font-style: italic;
+    text-transform: capitalize;
+    color: red;
+
+}
+q, #they{
+
+    border-left: solid 3px blue;
+
+}
+q, #farmer{
+
+    border-left: solid 3px green;
+
+}
 p{
-    font-family: serif;
+    font-family: "Open Sans",serif;
     font-size: large;
     margin: auto;
     color: #242424;
 }
 
+table{
+    border: solid;
+    border-collapse: collapse;
+
+}
+table, th, td {
+
+    border: 1px solid;
+
+}
+
+tr:nth-child(even) {
+
+    color: white;
+    background-color: grey;
+
+}
+tr:nth-child(odd) {
+    
+    color: black;
+    background-color: white;
+
+}
+
+img{
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    float: right;
+
+}
 a:link{
     color: rgb(255, 25, 148);
     text-decoration: none;
